@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Electrical Enquiry | Mfeti Electrical Solutions</title>
+
+    <meta name="description"
+          content="Enquire about electrical installations, repairs and maintenance from Mfeti Electrical Solutions.">
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Mfeti Electrical Solutions</h1>
+    <p>Safe, Affordable and Quality Electrical Services</p>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="enquiry.html">Enquiry</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<main>
+
+    <h2>Electrical Service Enquiry Form</h2>
+
+    <p>Please complete the form below to enquire about our services.</p>
+
+    <form class="validate-form"
+          action="https://formsubmit.co/YOUR_EMAIL_ADDRESS"
+          method="POST">
+
+        <input type="hidden" name="_subject"
+               value="New Electrical Service Enquiry">
+
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name"
+               required minlength="3">
+
+        <br><br>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email"
+               required>
+
+        <br><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone"
+               pattern="[0-9+ ]{10,15}"
+               required>
+
+        <br><br>
+
+        <label for="service">Select Electrical Service:</label>
+
+        <select id="service" name="service" required>
+            <option value="">Choose a service</option>
+            <option value="Electrical Installation">Electrical Installation</option>
+            <option value="Electrical Repairs">Electrical Repairs</option>
+            <option value="Electrical Maintenance">Electrical Maintenance</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <br><br>
+
+        <label for="details">Describe Your Enquiry:</label>
+
+        <textarea id="details" name="details"
+                  rows="5" required minlength="10"></textarea>
+
+        <br><br>
+
+        <button type="submit">Submit Enquiry</button>
+
+        <p class="form-message" aria-live="polite"></p>
+
+    </form>
+
+</main>
+
+<footer>
+    <p>&copy; <span id="year"></span>
+       Mfeti Electrical Solutions. All Rights Reserved.</p>
+</footer>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
